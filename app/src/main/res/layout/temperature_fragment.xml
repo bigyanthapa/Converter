@@ -1,108 +1,107 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fillViewport="true"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    tools:context="com.bigyan.converter.TemperatureFragment"
     android:background="@color/layout_background">
 
 
-        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-            xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-            android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
-            android:paddingRight="@dimen/activity_horizontal_margin"
-            android:paddingTop="@dimen/activity_vertical_margin"
-            android:paddingBottom="@dimen/activity_vertical_margin"
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
             android:background="@color/layout_background"
             tools:context="com.bigyan.converter.TemperatureFragment">
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="    Convert Temperature Here"
-                android:id="@+id/temperatureTextView"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:textColor="@color/title_text_color"
-                android:textStyle="bold"
-                android:textAlignment="center"
-                android:textSize="25dp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="    Convert Temperature Here"
+                    android:id="@+id/temperatureTextView"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:textColor="@color/title_text_color"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:textSize="25dp" />
 
-            <EditText
-                android:layout_width="180dp"
-                android:layout_height="wrap_content"
-                android:inputType="numberDecimal"
-                android:selectAllOnFocus="true"
-                android:id="@+id/inputTempEditText"
-                android:layout_below="@+id/temperatureTextView"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="30dp"
-                android:hint="Input Temperature Here"
-                android:textAlignment="center"
-                android:textSize="20dp" />
+                <EditText
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:selectAllOnFocus="true"
+                    android:id="@+id/inputTempEditText"
+                    android:layout_below="@+id/temperatureTextView"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="30dp"
+                    android:hint="Input Temperature Here"
+                    android:textAlignment="center"
+                    android:textSize="20dp" />
 
-            <Spinner
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:id="@+id/tempConvertFromSpinner"
-                android:gravity="right"
-                android:layout_below="@+id/convertFromTextView"
-                android:layout_alignLeft="@+id/temperatureTextView"
-                android:layout_alignStart="@+id/temperatureTextView"
-                android:background="@color/spinner_background"
-                android:entries="@array/temperature_spinner"
-                android:layout_marginTop="15dp" />
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/tempConvertFromSpinner"
+                    android:gravity="right"
+                    android:layout_below="@+id/convertFromTextView"
+                    android:layout_alignLeft="@+id/temperatureTextView"
+                    android:layout_alignStart="@+id/temperatureTextView"
+                    android:background="@color/spinner_background"
+                    android:entries="@array/temperature_spinner"
+                    android:layout_marginTop="15dp" />
 
-            <Spinner
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:id="@+id/tempConvertToSpinner"
-                android:gravity="left"
-                android:layout_below="@+id/convertToTextView"
-                android:layout_alignLeft="@+id/tempConvertFromSpinner"
-                android:layout_alignStart="@+id/tempConvertFromSpinner"
-                android:entries="@array/temperature_spinner"
-                android:background="@color/spinner_background"
-                android:layout_marginTop="15dp" />
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/tempConvertToSpinner"
+                    android:gravity="left"
+                    android:layout_below="@+id/convertToTextView"
+                    android:layout_alignLeft="@+id/tempConvertFromSpinner"
+                    android:layout_alignStart="@+id/tempConvertFromSpinner"
+                    android:entries="@array/temperature_spinner"
+                    android:background="@color/spinner_background"
+                    android:layout_marginTop="15dp" />
 
-            <Button
-                style="?android:attr/buttonStyleSmall"
-                android:layout_width="200dp"
-                android:layout_height="55dp"
-                android:text="Convert"
-                android:id="@+id/convertTempBtn"
-                android:layout_alignParentBottom="true"
-                android:layout_centerHorizontal="true"
-                android:layout_marginBottom="50dp"
-                android:textSize="25dp"
-                android:background="@drawable/rounded_view"
-                android:textStyle="bold" />
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="200dp"
+                    android:layout_height="55dp"
+                    android:text="Convert"
+                    android:id="@+id/convertTempBtn"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="50dp"
+                    android:textSize="25dp"
+                    android:background="@drawable/rounded_view"
+                    android:textStyle="bold" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="Convert from ..."
-                android:id="@+id/convertFromTextView"
-                android:textSize="20dp"
-                android:layout_below="@+id/inputTempEditText"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="20dp"
-                android:textStyle="bold|italic" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Convert from ..."
+                    android:id="@+id/convertFromTextView"
+                    android:textSize="20dp"
+                    android:layout_below="@+id/inputTempEditText"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:textStyle="bold|italic" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="Convert to..."
-                android:id="@+id/convertToTextView"
-                android:textSize="20dp"
-                android:textStyle="bold|italic"
-                android:layout_centerVertical="true"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="30dp" />
-
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Convert to..."
+                    android:id="@+id/convertToTextView"
+                    android:textSize="20dp"
+                    android:textStyle="bold|italic"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="30dp" />
 
         </RelativeLayout>
 </ScrollView>

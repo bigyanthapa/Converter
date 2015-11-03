@@ -42,7 +42,7 @@ public class TemperatureFragment extends Fragment implements View.OnClickListene
 
     @Override
     public void onClick(View v) {
-        Double input = Double.parseDouble(temperatureEditText.getText().toString());
+        Double input = Double.parseDouble(temperatureEditText.getText().toString());git
         Double convertedTemp = 0.0;
 
         //Case 1 : Convert centigrade to farhenheit
