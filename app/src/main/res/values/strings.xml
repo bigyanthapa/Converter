@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">AnY CoNvErTeR</string>
+    <string name="app_name">Any Converter</string>
     <string name="action_settings">Settings</string>
     <string name="drawer_open">Open navigation drawer</string>
     <string name="drawer_close">Close navigation drawer</string>
@@ -44,7 +44,7 @@
         <!-- Content Description -->
         <string name="desc_list_item_icon">Item Icon</string>
 
-    <string name="welcome_screen_text"> This a Converter Application. You can convert many things in single place with this application.
+    <string name="welcome_screen_text"> This is a Converter Application. You can convert many things in single place with this application.
     This is build for academic purpose and might contain some issues. Please try this and let me know for the improvements.</string>
     <color name="welcome_screen_text_color">#932323</color>
 
