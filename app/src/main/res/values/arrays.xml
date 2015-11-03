@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Populate Temperature Spinner -->
+    <array name="temperature_spinner">
+        <item>Centigrade</item>
+        <item>Fahrenheit</item>
+        <item>Kelvin</item>
+    </array>
+
+    <!-- Populate Distance Spinner -->
+    <array name="distance_spinner">
+        <item>Kilometres</item>
+        <item>Miles</item>
+    </array>
+
+    <!-- Populate Area Spinner -->
+    <array name="area_spinner">
+        <item>Hecter</item>
+        <item>Acre</item>
+        <item>Square Feet</item>
+    </array>
+
+    <!-- Populate Temperature Spinner -->
+    <array name="currency_spinner">
+        <item>Nepalese Rupees</item>
+        <item>US Dollar</item>
+        <item>Australian Dollar</item>
+        <item>European Euro</item>
+    </array>
+
+    <!-- Populate Weight Spinner -->
+    <array name="weight_spinner">
+        <item>Kilo Grams</item>
+        <item>LB Pounds</item>
+        <item>Grams</item>
+    </array>
+
+
+
+
+
+</resources>

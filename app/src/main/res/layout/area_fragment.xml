@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@color/layout_background"
+    tools:context="com.bigyan.converter.AreaFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="          Convert Area Here"
+        android:id="@+id/areaTextView"
+        android:textColor="@color/title_text_color"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentEnd="false"
+        android:layout_marginTop="10dp"
+        android:layout_centerVertical="true" />
+
+    <EditText
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:selectAllOnFocus="true"
+        android:id="@+id/inputAreaEditText"
+        android:hint="Input Area Here"
+        android:textAlignment="center"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/areaTextView"
+        android:layout_centerHorizontal="true" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/areaConvertFromSpinner"
+        android:gravity="right"
+        android:layout_below="@+id/convertFromTextView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:entries="@array/area_spinner"
+        android:background="@color/spinner_background"
+        android:layout_marginTop="15dp" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/areaConvertToSpinner"
+        android:gravity="left"
+        android:layout_above="@+id/convertAreaBtn"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="40dp"
+        android:entries="@array/area_spinner"
+        android:background="@color/spinner_background"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="200dp"
+        android:layout_height="55dp"
+        android:text="Convert"
+        android:id="@+id/convertAreaBtn"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:textSize="25dp"
+        android:background="@drawable/rounded_view"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Convert from ..."
+        android:id="@+id/convertFromTextView"
+        android:textSize="20dp"
+        android:layout_marginTop="25dp"
+        android:textStyle="bold|italic"
+        android:layout_below="@+id/inputAreaEditText"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Convert to..."
+        android:id="@+id/convertToTextView"
+        android:textSize="20dp"
+        android:textStyle="bold|italic"
+        android:layout_above="@+id/areaConvertToSpinner"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
