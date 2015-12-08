@@ -7,8 +7,9 @@
     <color name="counter_text_bg">#cdfff9</color>
     <color name="counter_text_color">#faffe7</color>
 
-    <color name="title_text_color">#19569f</color>
-    <color name="layout_background">#FFAACEDE</color>
+    <color name="title_text_color">#031959</color>
+    <color name="layout_background">#439afd</color>
+    <color name="text_background">#FFC1DEFF</color>
 
-    <color name="spinner_background">#FFC2E2F1</color>
+    <color name="spinner_background">#6a7f89</color>
 </resources>

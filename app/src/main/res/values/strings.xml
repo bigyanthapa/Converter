@@ -12,6 +12,14 @@
     <string name="title_activity_currency_fragment">Currency Converter</string>
     <string name="title_activity_welcome_fragment">About Us</string>
 
+    <string name="prompt_message">Select One</string>
+
+
+    <array name="acc_type">
+        <item>Income</item>
+        <item>Expense</item>
+    </array>
+
 
 
 
@@ -47,6 +55,11 @@
     <string name="welcome_screen_text"> This is a Converter Application. You can convert many things in single place with this application.
     This is build for academic purpose and might contain some issues. Please try this and let me know for the improvements.</string>
     <color name="welcome_screen_text_color">#932323</color>
+    <string name="title_activity_currency_converter">CurrencyConverter</string>
+    <string name="title_activity_weight_converter">WeightConverter</string>
+    <string name="title_activity_area_converter">AreaConverter</string>
+    <string name="title_activity_temperature_converter">TemperatureConverter</string>
+    <string name="title_activity_distance_converter">DistanceConverter</string>
 
 
 

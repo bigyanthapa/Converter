@@ -21,6 +21,8 @@ android {
 }
 
 dependencies {
-    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile fileTree(dir: 'libs',include: ['*.jar'])
     compile 'com.android.support:appcompat-v7:21.0.3'
+    compile files('/Users/bigyanthapa/AndroidStudioProjects/com-bigyan-converter/libs/android-query-full.0.26.7.jar')
+    compile files('/Users/bigyanthapa/AndroidStudioProjects/com-bigyan-converter/libs/volley.jar')
 }

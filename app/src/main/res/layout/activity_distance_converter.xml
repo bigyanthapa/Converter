@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.bigyan.converter.WeightConverter"
+    android:background="@drawable/gradient_layout_background">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Convert The Distance"
+        android:textColor="@color/title_text_color"
+        android:id="@+id/inputDistance"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="50dp"/>
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:inputType="numberDecimal"
+        android:id="@+id/distanceEditText"
+        android:hint="Input Value here"
+        android:background="@drawable/rounded_edit_text"
+        android:paddingLeft="10dp"
+        android:layout_alignTop="@+id/distance_convertFromSpinner"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="10dp" />
+
+    <Spinner
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:id="@+id/distance_convertFromSpinner"
+        style="@style/spinner_style"
+        android:entries="@array/distance_spinner"
+        android:prompt="@string/prompt_message"
+        android:spinnerMode="dialog"
+        android:layout_below="@+id/inputDistance"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="50dp" />
+
+    <Spinner
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:id="@+id/distance_convertToSpinner"
+        style="@style/spinner_style"
+        android:spinnerMode="dialog"
+        android:prompt="@string/prompt_message"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="OK"
+        android:id="@+id/distance_convertButton"
+        android:background="@drawable/rounded_view"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/distance_convertToSpinner"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/convertedDistance"
+        android:hint="Converted Value"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/distance_convertButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="41dp"
+        android:paddingLeft="10dp" />
+
+
+</RelativeLayout>

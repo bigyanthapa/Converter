@@ -16,17 +16,17 @@
 
     <!-- Populate Area Spinner -->
     <array name="area_spinner">
-        <item>Hecter</item>
+        <item>Hectare</item>
         <item>Acre</item>
-        <item>Square Feet</item>
+        <item>Square Foot</item>
     </array>
 
     <!-- Populate Temperature Spinner -->
     <array name="currency_spinner">
-        <item>Nepalese Rupees</item>
-        <item>US Dollar</item>
-        <item>Australian Dollar</item>
-        <item>European Euro</item>
+        <item>NPR</item>
+        <item>USD</item>
+        <item>AUD</item>
+        <item>EUR</item>
     </array>
 
     <!-- Populate Weight Spinner -->

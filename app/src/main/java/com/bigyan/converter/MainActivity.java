@@ -2,6 +2,7 @@ package com.bigyan.converter;
 
 import android.app.Fragment;
 import android.app.FragmentManager;
+import android.content.Intent;
 import android.content.res.Configuration;
 import android.content.res.TypedArray;
 import android.os.Bundle;
@@ -13,7 +14,6 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import com.bigyan.converter.adapter.NavDrawerListAdapter;
@@ -28,7 +28,6 @@ public class MainActivity extends ActionBarActivity {
 
     private ListView mDrawerList;
     private DrawerLayout mDrawerLayout;
-    private ArrayAdapter<String> mAdapter;
     private ActionBarDrawerToggle mDrawerToggle;
     private String mActivityTitle;
 
@@ -114,7 +113,6 @@ public class MainActivity extends ActionBarActivity {
     }
 
 
-
     /**
      * Slide menu item click listener
      * */
@@ -132,24 +130,40 @@ public class MainActivity extends ActionBarActivity {
     public void displayView(int position){
         // update the main content by replacing fragments
         Fragment fragment = null;
+        Intent i;
         switch (position) {
             case 0:
                 fragment = new WelcomeFragment();
                 break;
             case 1:
-                fragment = new TemperatureFragment();
+                //fragment = new TemperatureFragment();
+                i = new Intent(this, TemperatureConverter.class);
+                startActivity(i);
+                mDrawerLayout.closeDrawer(mDrawerList);
                 break;
             case 2:
-                fragment = new DistanceFragment();
+                //fragment = new DistanceFragment();
+                i = new Intent(this, DistanceConverter.class);
+                startActivity(i);
+                mDrawerLayout.closeDrawer(mDrawerList);
                 break;
             case 3:
-                fragment = new WeightFragment();
+                //fragment = new WeightFragment();
+                i = new Intent(this, WeightConverter.class);
+                startActivity(i);
+                mDrawerLayout.closeDrawer(mDrawerList);
                 break;
             case 4:
-                fragment = new CurrencyFragment();
+                //fragment = new CurrencyFragment();
+                i = new Intent(this, CurrencyConverter.class);
+                startActivity(i);
+                mDrawerLayout.closeDrawer(mDrawerList);
                 break;
             case 5:
-                fragment = new AreaFragment();
+                //fragment = new AreaFragment();
+                i = new Intent(this, AreaConverter.class);
+                startActivity(i);
+                mDrawerLayout.closeDrawer(mDrawerList);
                 break;
 
 
