@@ -11,6 +11,7 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -21,6 +22,8 @@ public class TemperatureConverter extends Activity implements AdapterView.OnItem
     private Button convertButton;
     private EditText inputText;
     private TextView outputText;
+
+    DecimalFormat numberFormat = new DecimalFormat("#.0000");
 
 
     @Override
@@ -122,7 +125,7 @@ public class TemperatureConverter extends Activity implements AdapterView.OnItem
                         case "Kelvin":
                             //Kelvin = Celsius + 273.15
                             convertedTemp = input_temperature + 273.15;
-                            outputText.setText(input_temperature+" C "+"= "+convertedTemp+" K");
+                            outputText.setText(numberFormat.format(input_temperature)+" C "+"= "+numberFormat.format(convertedTemp)+" K");
                             //Double convertedTemp = ((input-32.0)*5)/9;
                             break;
                     } // Completed for Conversion of Centigrade to Others
@@ -134,13 +137,13 @@ public class TemperatureConverter extends Activity implements AdapterView.OnItem
                         //In this case, we are converting from Fahrenheit to Centigrade
                         case "Centigrade":
                             convertedTemp = (input_temperature- 32)*5/9;
-                            outputText.setText(input_temperature + " F " + "= " + convertedTemp + " C");
+                            outputText.setText(numberFormat.format(input_temperature) + " F " + "= " + numberFormat.format(convertedTemp) + " C");
                             break;
                         //In this case, we are converting from Fahrenheit to Kelvin
                         case "Kelvin":
                             //Celsius = Kelvin -273.15 => Kelvin = Celsius + 273.15
                             convertedTemp = ((input_temperature- 32)/1.8) + 273.15;
-                            outputText.setText(input_temperature + " F " + "= " + convertedTemp + " K");
+                            outputText.setText(numberFormat.format(input_temperature) + " F " + "= " + numberFormat.format(convertedTemp) + " K");
                             break;
                     }// Completed for Conversion of Fahrenheit to Others
                     break;
@@ -151,12 +154,12 @@ public class TemperatureConverter extends Activity implements AdapterView.OnItem
                         //In this case, both are Kelvin to centigrade , so simply assign the same value.
                         case "Centigrade":
                             convertedTemp = input_temperature - 273.15;
-                            outputText.setText(input_temperature + " K " + "= " + convertedTemp + " C");
+                            outputText.setText(numberFormat.format(input_temperature) + " K " + "= " + numberFormat.format(convertedTemp) + " C");
                             break;
                         //In this case, we are converting from Kelvin to Fahrenheit
                         case "Fahrenheit":
                             convertedTemp = ((input_temperature - 273.15) * 1.8)+32;
-                            outputText.setText(input_temperature + " K" + "= "+convertedTemp+" F");
+                            outputText.setText(numberFormat.format(input_temperature) + " K" + "= "+numberFormat.format(convertedTemp)+" F");
                             break;
                     }// Completed for Conversion of Kelvin to Others
                     break;
